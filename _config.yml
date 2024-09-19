@@ -7,6 +7,8 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-gist 
+  - jekyll-sitemap
+  - jekyll github-pages
 
 # Permalinks
 permalink:        pretty
@@ -16,7 +18,7 @@ permalink:        pretty
 title:            Joshua Zhong
 tagline:          Tagline_from_config_yaml
 description:      Description_from_config_yaml
-url:              https://jzhong01.github.io/
+url:              https://jzhong01.github.io
 baseurl:          /my-portfolio
 
 author:
@@ -29,4 +31,4 @@ paginate:         5
 version:          2.1.0
 
 github:
-  repo:           https://github.com/poole/hyde
+  repo:           https://github.com/JZhong01/my-portfolio
