@@ -47,11 +47,11 @@ body.resume-page .resume-content a:hover {
     text-decoration: underline;
 }
 
-.body.resume-page .section {
+body.resume-page .section {
     margin-bottom: 10px;
 }
 
-.body.resume-page .section h2 {
+body.resume-page .section h2 {
     font-size: 24px;
     font-weight: bold;
     border-bottom: 2px solid #4CAF50;
@@ -59,35 +59,35 @@ body.resume-page .resume-content a:hover {
     margin-bottom: 5px;
 }
 
-.body.resume-page h3 {
+body.resume-page h3 {
     font-size: 20px;
     font-weight: bold;
     margin: 10px 0;
 }
 
-.body.resume-page p {
+body.resume-page p {
     margin: 5px 0;
 }
 
-.body.resume-page ul {
+body.resume-page ul {
     margin: 10px 0;
     padding-left: 20px;
 }
 
-.body.resume-page ul li {
+body.resume-page ul li {
     margin-bottom: 5px;
 }
 
-.body.resume-page table.certifications {
+body.resume-page table.certifications {
     width: 100%;
     border-collapse: collapse;
 }
 
-.body.resume-page table.certifications td {
+body.resume-page table.certifications td {
     padding: 5px;
     border: 1px solid #ddd;
 }
 
-.body.resume-page table.certifications td:first-child {
+body.resume-page table.certifications td:first-child {
     font-weight: bold;
 }
