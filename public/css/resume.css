@@ -3,6 +3,8 @@ body.resume-page {
     line-height: 1.6;
     background-color: #f0f0f0;  /* Light gray or any color of your choice */
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 body.resume-page .resume-header {
@@ -28,14 +30,56 @@ body.resume-page .resume-header {
 /* Ensure the body itself has a different background color to differentiate the sidebar */
 body.resume-page .content{
     background-color: #f0f0f0;  /* Light gray or any color of your choice */
-    width: 100%;
     max-width: 100%; /* Remove the width restriction */
-    margin-left: 380px; /* Adjust according to the width of your sidebar */
-    margin-right: 20px; /* Give some padding on the right side */
+    margin-left: 20rem; /* Adjust according to the width of your sidebar */
+    margin-right: 2rem; /* Give some padding on the right side */
     padding-top: 2rem; /* Optional: Adjust vertical padding */
     padding-bottom: 2rem;
-    display: flex;
+    /*display: flex;*/
 }
+
+/* Adjustments for medium-sized screens like tablets */
+@media (max-width: 1024px) {
+    body.resume-page .content {
+        margin-left: 18rem; /* Align with slightly smaller sidebar */
+        margin-right: 1rem;
+    }
+    
+    body.resume-page .resume-header {
+        font-size: 32px;
+    }
+}
+
+
+/* Responsive adjustments for mobile screens */
+@media (max-width: 768px) {
+    body.resume-page .content {
+        margin-left: 0;  /* Remove left margin to maximize screen space */
+        margin-right: 0; /* Remove right margin */
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    body.resume-page .resume-header {
+        font-size: 28px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    body.resume-page .content {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    
+    body.resume-page .resume-header {
+        font-size: 24px;
+    }
+}
+
+
 
 /* Specific link styling for resume content */
 body.resume-page .resume-content a {
