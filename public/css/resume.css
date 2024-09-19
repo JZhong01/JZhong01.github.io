@@ -14,18 +14,27 @@ body {
 
 
 /* Override the content width restriction from hyde.css */
-.content {
+
+/*.content { */
+    /* max-width: 100%; /* Remove the width restriction */
+    /* margin-left: 380px; /* Adjust according to the width of your sidebar */
+    /* margin-right: 20px; /* Give some padding on the right side */
+    /* padding-top: 2rem; /* Optional: Adjust vertical padding */
+    /* padding-bottom: 2rem;
+}
+*/
+
+
+/* Ensure the body itself has a different background color to differentiate the sidebar */
+body.resume-page .content{
+    background-color: #f0f0f0;  /* Light gray or any color of your choice */
+    width: 100%;
     max-width: 100%; /* Remove the width restriction */
     margin-left: 380px; /* Adjust according to the width of your sidebar */
     margin-right: 20px; /* Give some padding on the right side */
     padding-top: 2rem; /* Optional: Adjust vertical padding */
     padding-bottom: 2rem;
-}
-
-/* Ensure the body itself has a different background color to differentiate the sidebar */
-body.resume-page {
-    background-color: #f0f0f0;  /* Light gray or any color of your choice */
-    width: 100%;
+    display: flex;
 }
 
 /* Specific link styling for resume content */
