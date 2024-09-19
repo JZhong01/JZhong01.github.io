@@ -1,0 +1,97 @@
+body {
+    font-family: "PT Sans", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+}
+
+.resume-header {
+    font-size: 36px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+
+/* Override the content width restriction from hyde.css */
+.content {
+    max-width: 100%; /* Remove the width restriction */
+    margin-left: 380px; /* Adjust according to the width of your sidebar */
+    margin-right: 20px; /* Give some padding on the right side */
+    padding-top: 4rem; /* Optional: Adjust vertical padding */
+    padding-bottom: 4rem;
+}
+
+/* Ensure the body itself has a different background color to differentiate the sidebar */
+body.resume-page {
+    background-color: #f0f0f0;  /* Light gray or any color of your choice */
+    width: 100%;
+}
+
+/* Specific link styling for resume content */
+.resume-content a {
+    color: #4CAF50;  /* Adjust link color */
+    text-decoration: none;
+}
+
+.resume-content a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+.section {
+    margin-bottom: 10px;
+}
+
+.section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+p {
+    margin: 5px 0;
+}
+
+ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+table.certifications {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.certifications td {
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+
+table.certifications td:first-child {
+    font-weight: bold;
+}
+
+/* Specific link styling */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,62 @@
+<div class="sidebar">
+
+  <div class="sidebar-icons" style="margin-top: auto;">
+    
+    <div class="sidebar-about">
+      <h1>
+        <a href="{{ site.baseurl }}">
+          {{ site.title }}
+        </a>
+      </h1>
+      <p class="lead">{{ site.description }}</p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
+
+      {% comment %}
+        The code below dynamically generates a sidebar nav of pages with
+        `layout: page` in the front-matter. See readme for usage.
+      {% endcomment %}
+
+      {% assign pages_list = site.pages %}
+      {% for node in pages_list %}
+        {% if node.title != null %}
+          {% if node.layout == "page" %}
+            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+
+
+
+
+
+
+
+    </nav>
+
+
+  </div>
+
+
+
+  <div class="container sidebar-sticky">
+
+
+
+    <a class="sidebar-nav-item" href="tel:+14849650953"><i class="fas fa-phone"></i> +1(484) 965-0953</a>
+    <a class="sidebar-nav-item" href="mailto:jzhongjzhong11@gmail.com"><i class="fas fa-envelope"></i> jzhongjzhong11@gmail.com</a>
+    <a class="sidebar-nav-item" href="https://linkedin.com/in/jy-z" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    <a class="sidebar-nav-item" href="https://github.com/JZhong01" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+  
+    
+  </div>
+
+
+
+
+
+
+
+</div>

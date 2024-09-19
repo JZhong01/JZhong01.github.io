@@ -1,0 +1,32 @@
+# Dependencies
+markdown:         kramdown
+highlighter:      Rouge
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-gist 
+
+# Permalinks
+permalink:        pretty
+
+
+# Setup
+title:            Joshua Zhong
+tagline:          Tagline_from_config_yaml
+description:      Description_from_config_yaml
+url:              http://hyde.getpoole.com
+baseurl:          my-portfolio
+
+author:
+  name:           'Joshua Zhong'
+  url:            https://linkedin.com/in/jy-z
+
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+
+github:
+  repo:           https://github.com/poole/hyde
