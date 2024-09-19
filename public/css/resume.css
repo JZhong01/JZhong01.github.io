@@ -1,16 +1,16 @@
-body {
+body.resume-page {
     font-family: "PT Sans", Helvetica, Arial, sans-serif;
     line-height: 1.6;
-    display: flex;
+    background-color: #f0f0f0;  /* Light gray or any color of your choice */
+    width: 100%;
 }
 
-.resume-header {
+body.resume-page .resume-header {
     font-size: 36px;
     text-align: center;
     font-weight: bold;
     margin-bottom: 5px;
 }
-
 
 
 /* Override the content width restriction from hyde.css */
@@ -38,23 +38,20 @@ body.resume-page .content{
 }
 
 /* Specific link styling for resume content */
-.resume-content a {
+body.resume-page .resume-content a {
     color: #4CAF50;  /* Adjust link color */
     text-decoration: none;
 }
 
-.resume-content a:hover {
+body.resume-page .resume-content a:hover {
     text-decoration: underline;
 }
 
-
-
-
-.section {
+.body.resume-page .section {
     margin-bottom: 10px;
 }
 
-.section h2 {
+.body.resume-page .section h2 {
     font-size: 24px;
     font-weight: bold;
     border-bottom: 2px solid #4CAF50;
@@ -62,45 +59,35 @@ body.resume-page .content{
     margin-bottom: 5px;
 }
 
-h3 {
+.body.resume-page h3 {
     font-size: 20px;
     font-weight: bold;
     margin: 10px 0;
 }
 
-p {
+.body.resume-page p {
     margin: 5px 0;
 }
 
-ul {
+.body.resume-page ul {
     margin: 10px 0;
     padding-left: 20px;
 }
 
-ul li {
+.body.resume-page ul li {
     margin-bottom: 5px;
 }
 
-table.certifications {
+.body.resume-page table.certifications {
     width: 100%;
     border-collapse: collapse;
 }
 
-table.certifications td {
+.body.resume-page table.certifications td {
     padding: 5px;
     border: 1px solid #ddd;
 }
 
-table.certifications td:first-child {
+.body.resume-page table.certifications td:first-child {
     font-weight: bold;
-}
-
-/* Specific link styling */
-a {
-    color: #4CAF50;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
 }
