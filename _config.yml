@@ -8,7 +8,6 @@ plugins:
   - jekyll-paginate
   - jekyll-gist 
   - jekyll-sitemap
-  - jekyll github-pages
 
 # Permalinks
 permalink:        pretty
