@@ -18,8 +18,8 @@ body {
     max-width: 100%; /* Remove the width restriction */
     margin-left: 380px; /* Adjust according to the width of your sidebar */
     margin-right: 20px; /* Give some padding on the right side */
-    padding-top: 4rem; /* Optional: Adjust vertical padding */
-    padding-bottom: 4rem;
+    padding-top: 2rem; /* Optional: Adjust vertical padding */
+    padding-bottom: 2rem;
 }
 
 /* Ensure the body itself has a different background color to differentiate the sidebar */
