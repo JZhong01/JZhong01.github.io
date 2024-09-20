@@ -14,19 +14,22 @@ title: Home
 
 
 <div class="posts">
-  {% if post.categories contains 'home-page' %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ site.baseurl }}/projects/{{ post.title }}">
-        {{ post.title }}
-      </a>
-    </h1>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+  {% for post in paginator.posts %}
+    {% if post.categories contains 'home-page' %}
+    <div class="post">
+      <h1 class="post-title">
+        <a href="{{ site.baseurl }}/projects/sunspot_time_series_decomp_analysis">
+          {{ post.title }}
+        </a>
+      </h1>
 
-    {{ post.content }}
-  </div>
-  {% endif %}
+      <span class="post-date">{{ post.date | date_to_string }}</span>
+
+      {{ post.content }}
+    </div>
+    {% endif %}
+  {% endfor %}
 </div>
 
 
