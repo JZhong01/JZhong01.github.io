@@ -4,10 +4,6 @@ title: Home
 ---
 
 
-
-
-
-
 <div class="page" style="margin-bottom: 2em;">
   <img src="{{ site.baseurl }}/public/Professional_Headshot.JPG" alt="Professional Headshot" class="user-img">
 </div>
@@ -18,10 +14,10 @@ title: Home
 
 
 <div class="posts">
-  {% for post in paginator.posts %}
+  {% if post.categories contains 'home-page' %}
   <div class="post">
     <h1 class="post-title">
-      <a href="{{ post.url }}">
+      <a href="{{ site.baseurl }}/projects/{{ post.title }}">
         {{ post.title }}
       </a>
     </h1>
