@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Time Series Decomposition"
-date:   2024-09-20 15:11
+date:   2024-01-17 15:11
 categories: [home-page, time-series]
 ---
 
