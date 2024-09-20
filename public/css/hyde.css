@@ -178,10 +178,11 @@ a.sidebar-nav-item:focus {
 
 
 .user-img {
-    width: 50px;
+    width: 150px;
+    height: 150px;
     border-radius: 100%;
     border: 1px solid #eee;
-
+    object-fit: cover;
 }
 
 
