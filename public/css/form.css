@@ -1,0 +1,57 @@
+form {
+    max-width: 500px; /* Limit the width of the form */
+    margin: 0 auto; /* Center the form on the page */
+    padding: 20px; /* Add padding inside the form */
+    background-color: #f9f9f9; /* Light background color */
+    border: 1px solid #ddd; /* Light border around the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Style the input fields and textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Make input fields full width */
+    padding: 12px; /* Add padding for a comfortable typing area */
+    margin-bottom: 10px; /* Space between inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    font-size: 1rem; /* Set a readable font size */
+    background-color: #fff; /* White background */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Style the textarea specifically */
+textarea {
+    height: 150px; /* Set a height for the message box */
+    resize: vertical; /* Allow resizing vertically but not horizontally */
+}
+
+/* Style the submit button */
+button[type="submit"] {
+    width: 100%; /* Full-width button */
+    background-color: #28a745; /* Green background color */
+    color: white; /* White text */
+    padding: 12px; /* Padding for a larger click area */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor to indicate it's clickable */
+    font-size: 1rem; /* Make text readable */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Hover effect for the button */
+button[type="submit"]:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Add focus effect on input fields */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none; /* Remove the default blue outline */
+    border-color: #80bdff; /* Add a blue border */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25); /* Soft shadow */
+}
