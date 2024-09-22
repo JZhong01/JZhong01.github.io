@@ -5,59 +5,79 @@ title: Projects
 
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<h1 class="post-title" style="font-size: 2.25rem; margin-top: 1em; margin-bottom: 1em;">
+    Regression Modeling and Predictive Analysis
+</h1>
 
-    <style>
-        /* Style the dropdown in the sidebar */
-        .sidebar-dropdown {
-            list-style-type: none;
-            padding-left: 20px; /* Indent the dropdown items */
-            margin-top: 5px;
-        }
+<p class="lead"> To be updated </p>
 
-        .sidebar-dropdown li {
-            margin-bottom: 5px;
-        }
+<div class="posts">
 
-        .sidebar-dropdown li a {
-            color: rgba(255,255,255,.8); /* White text for sidebar items */
-            text-decoration: none;
-        }
+    {% for post in paginator.posts %}
+      {% if post.categories contains 'regression-analysis' %}
+      <div class="post">
+        <h1 class="post-title">
+          <a href="{{ site.baseurl }}/{{post.title}}" target="_blank">
+            {{ post.title }}
+          </a>
+        </h1>
+  
+        <span class="post-date">{{ post.date | date_to_string }}</span>
+  
+        {{ post.content }}
+      </div>
+      {% endif %}
+    {% endfor %}
+  </div>
 
-        .sidebar-dropdown li a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body>
 
-    <!-- Project 1 Section -->
-    <div id="project1">
-        <h2>Project 1: Data Analysis Tool</h2>
-        <p>Description of project 1...</p>
-    </div>
 
-    <!-- Project 2 Section -->
-    <div id="project2">
-        <h2>Project 2: Machine Learning Model</h2>
-        <p>Description of project 2...</p>
-    </div>
+<h1 class="post-title" style="font-size: 2.25rem; margin-top: 1em; margin-bottom: 1em;">
+    Time Series Analysis and Forecasting
+</h1>
 
-    <!-- Project 3 Section -->
-    <div id="project3">
-        <h2>Project 3: Web Scraping Application</h2>
-        <p>Description of project 3...</p>
-    </div>
+<div class="posts">
 
-    <!-- Project 4 Section -->
-    <div id="project4">
-        <h2>Project 4: Dashboard Visualization</h2>
-        <p>Description of project 4...</p>
-    </div>
+    {% for post in paginator.posts %}
+      {% if post.categories contains 'time-series' %}
+      <div class="post">
+        <h1 class="post-title">
+          <a href="{{ site.baseurl }}/{{post.title}}" target="_blank">
+            {{ post.title }}
+          </a>
+        </h1>
+  
+        <span class="post-date">{{ post.date | date_to_string }}</span>
+  
+        {{ post.content }}
+      </div>
+      {% endif %}
+    {% endfor %}
+  </div>
 
-</body>
-</html>
+
+<h1 class="post-title" style="font-size: 2.25rem; margin-top: 1em; margin-bottom: 1em;">
+    Machine Learning
+</h1>
+
+<p class="lead"> To be updated </p>
+
+<div class="posts">
+
+    {% for post in paginator.posts %}
+      {% if post.categories contains 'machine-learning' %}
+      <div class="post">
+        <h1 class="post-title">
+          <a href="{{ site.baseurl }}/{{post.title}}" target="_blank">
+            {{ post.title }}
+          </a>
+        </h1>
+  
+        <span class="post-date">{{ post.date | date_to_string }}</span>
+  
+        {{ post.content }}
+      </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+
