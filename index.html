@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-
+{% comment %}
 <div class="page" style="margin-bottom: 2em; margin-right: 1em;">
   <img src="{{ site.baseurl }}/public/Professional_Headshot.JPG" alt="Professional Headshot" class="user-img">
 </div>
@@ -11,6 +11,16 @@ title: Home
 <p class="message" style="margin-bottom: 2em;">
   Welcome! I'm Joshua Zhong, a Statistician with experience in Data Analysis. I specialize in AI development and Machine Learning processes using R and Python. I hope you take the time to explore some of the work I've done here!
 </p>
+{% endcomment %}
+
+<div class="page" style="display: flex; align-items: center; margin-bottom: 2em;">
+  <img src="{{ site.baseurl }}/public/Professional_Headshot.JPG" alt="Professional Headshot" class="user-img" style="margin-right: 20px;">
+  
+  <p class="message" style="margin-bottom: 0; flex: 1;">
+    Welcome! I'm Joshua Zhong, a Statistician with experience in Data Analysis. I specialize in AI development and Machine Learning processes using R and Python. I hope you take the time to explore some of the work I've done here!
+  </p>
+</div>
+
 
 <h1 class="post-title" style="font-size: 2.25rem; margin-top: 1em; margin-bottom: 1em;">
   Leave your contact info!
@@ -42,7 +52,7 @@ title: Home
 
 <br>
 
-<h1 class="post-title" style="font-size: 2.25rem; margin-top: 1em; margin-bottom: 1em;">
+<h1 class="post-title" style="font-size: 2.25rem; margin-top: 1em; margin-bottom: 0.5em;">
     Featured Projects
 </h1>
 
