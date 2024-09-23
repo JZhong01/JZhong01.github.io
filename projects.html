@@ -13,7 +13,7 @@ title: Projects
 
 <div class="posts">
 
-    {% for post in paginator.posts %}
+    {% for post in site.posts %}
       {% if post.categories contains 'regression-analysis' %}
       <div class="post">
         <h1 class="post-title">
@@ -28,7 +28,8 @@ title: Projects
       </div>
       {% endif %}
     {% endfor %}
-  </div>
+
+</div>
 
 
 
@@ -38,7 +39,7 @@ title: Projects
 
 <div class="posts">
 
-    {% for post in paginator.posts %}
+    {% for post in site.posts %}
       {% if post.categories contains 'time-series' %}
       <div class="post">
         <h1 class="post-title">
@@ -64,7 +65,7 @@ title: Projects
 
 <div class="posts">
 
-    {% for post in paginator.posts %}
+    {% for post in site.posts %}
       {% if post.categories contains 'machine-learning' %}
       <div class="post">
         <h1 class="post-title">
