@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Time Series Forecasting of Monthly Sunspots"
+title:  "Analyzing Sunspot Activity Using STL Decomposition"
 date:   2024-01-17 15:11
 categories: [home-page, time-series]
 ---
