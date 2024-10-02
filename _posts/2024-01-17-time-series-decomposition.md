@@ -5,6 +5,5 @@ date:   2024-01-17 15:11
 categories: [home-page, time-series]
 ---
 
-This project focuses on forecasting sunspot activity using time series analysis techniques on historical data from 1749 to the present. The analysis utilizes both Classical and STL (Seasonal and Trend decomposition using Loess) decomposition methods to separate trends, seasonality, and residuals. Forecast models were evaluated based on Mean Absolute Percentage Error (MAPE) and Mean Squared Error (MSE), comparing results from different training set sizes. Key skills include time series decomposition, error analysis, model evaluation, and forecasting. The study discusses the impact of recent shifts in sunspot activity on model accuracy and the potential for future refinement using more advanced forecasting techniques.
-
+In this project, I applied STL (Seasonal-Trend decomposition using Loess) to analyze sunspot activity over the past 200 months, separating the time series into trend, seasonal, and residual components. The analysis revealed key patterns, such as the 11-year solar cycle and recent sharp increases in activity. I also used a seasonal naive model as a baseline to forecast future sunspot numbers, evaluating its accuracy across different training set sizes. Techniques used include STL decomposition, time series visualization, seasonal naive forecasting, and error analysis (MAE, MSE, MAPE). While the baseline model had limited accuracy, this project provides a foundation for exploring more advanced forecasting methods like ARIMA and Holt-Winters.
 
